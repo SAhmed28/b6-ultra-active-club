@@ -77,3 +77,19 @@ a, a:hover {
 .exercise-time span, .break-time span{
     color: #00c6ac;
 }
+
+.complete{
+    display: flex;
+    justify-content: center;
+}
+.complete button{
+    background: #0a2540;
+    color: #fff;
+    margin: 0 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    border: none;
+}
+.complete button:hover{
+    background: #00c6ac;
+}

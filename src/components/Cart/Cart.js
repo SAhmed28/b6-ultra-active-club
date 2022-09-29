@@ -66,8 +66,14 @@ const Cart = (props) => {
                     <div className="break-time">
                         <p>Break time: <span>{breaks}</span> mins</p>
                     </div>
+
+                    <div className="complete py-4">
+                        <button>Activity Completed</button>
+                    </div>
                 </div>
             </div>
+
+            
         </div>
     );
 };
