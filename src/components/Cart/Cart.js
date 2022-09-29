@@ -26,9 +26,9 @@ const Cart = (props) => {
                     </div>
                     <div className="person-physical-info pt-2 pb-4">
                         <ul className='d-flex justify-content-center text-center'>
-                            <li className='d-flex flex-column px-4'>60kg <span>Weight</span></li>
-                            <li className='d-flex flex-column px-4'>6.5 <span>Height</span></li>
-                            <li className='d-flex flex-column px-4'>25yrs <span>Age</span></li>
+                            <li className='d-flex flex-column px-3'>60kg <span>Weight</span></li>
+                            <li className='d-flex flex-column px-3'>6.5 <span>Height</span></li>
+                            <li className='d-flex flex-column px-3'>25yrs <span>Age</span></li>
                         </ul>
                     </div>
                 </div>
