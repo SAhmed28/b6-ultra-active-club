@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
+import { addToDb, getStoredCart } from '../utilites/managedb';
 
 const Cart = (props) => {
     const activityTime = props.activityTime;
     const [breaks, setBreak] = useState(0);
 
-    // console.log(activityTime);
+    useEffect(() => {
+        const storedCart = getStoredCart();
+        setBreak(storedCart.mins);
+    },[breaks])
+    
 
     function breakTimeHandler(value){
         setBreak(value);
+        addToDb(value);
     }
     
     return (
