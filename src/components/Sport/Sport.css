@@ -1,0 +1,9 @@
+.card img{
+    height: 150px;
+}
+.card-title{
+    font-weight: bolder;
+}
+.time{
+    font-weight: bold;
+}

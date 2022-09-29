@@ -1,0 +1,22 @@
+ol, ul {
+    list-style: none;
+}
+a, a:hover {
+    text-decoration: none;
+}
+.person-img, .person-info{
+    text-align: center;
+}
+.person-img img{
+    width: 14rem;
+    border-radius: 5px;
+}
+
+.person-info h5{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.person-info p{
+    color: #00c6ac;
+    font-weight: bold;
+}

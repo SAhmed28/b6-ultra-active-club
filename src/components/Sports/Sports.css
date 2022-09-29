@@ -1,0 +1,23 @@
+
+.left-part{
+    padding-left: 5%;
+}
+.logo{
+    color: #00c6ac;
+    padding: 3rem 0;
+}
+.logo .water-icon{
+    padding-right: 10px;
+}
+span{
+    color: #0a2540;
+}
+.right{
+    padding: 1rem 0;
+    background: #fff;
+    height: 100%;
+}
+
+/* .card-column {
+    column-gap: 0.25rem;
+} */
