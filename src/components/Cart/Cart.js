@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
 import { addToDb, getStoredCart } from '../utilites/managedb';
+// import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = (props) => {
     const activityTime = props.activityTime;
@@ -18,6 +21,8 @@ const Cart = (props) => {
         setBreak(value);
         addToDb(value);
     }
+
+    const notify = () => toast("Congratulations on your activity completion!");
     
     return (
         <div className='cart'>
@@ -68,7 +73,8 @@ const Cart = (props) => {
                     </div>
 
                     <div className="complete py-4">
-                        <button>Activity Completed</button>
+                        <button onClick={notify}>Activity Completed</button>
+                        <ToastContainer />
                     </div>
                 </div>
             </div>
