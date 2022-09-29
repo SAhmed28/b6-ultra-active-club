@@ -5,8 +5,8 @@ import './Cart.css'
 const Cart = () => {
     const [breaks, setBreak] = useState(0);
 
-    function breakTimeHandler(element){
-        console.log(element.innerText);
+    function breakTimeHandler(value){
+        setBreak(value);
     }
     
 
@@ -37,11 +37,11 @@ const Cart = () => {
                     <h5>Add A Break</h5>
                     <div className="breaks">
                         <ul className='d-flex justify-content-center'>
-                            {/* <li className='px-2'><button onClick={()=>breakTimeHandler(this)}>10</button>s</li> */}
-                            {/* <li className='px-2'><button onClick={breakTimeHandler}>20</button>s</li>
-                            <li className='px-2'><button onClick={breakTimeHandler}>30</button>s</li>
-                            <li className='px-2'><button onClick={breakTimeHandler}>40</button>s</li>
-                            <li className='px-2'><button onClick={breakTimeHandler}>50</button>s</li> */}
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(10)}>10</button>s</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(20)}>20</button>s</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(30)}>30</button>s</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(40)}>40</button>s</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(50)}>50</button>s</li>
                         </ul>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const Cart = () => {
                         <p>Exercise time: seconds</p>
                     </div>
                     <div className="break-time">
-                        <p>Break time: seconds</p>
+                        <p>Break time: {breaks} seconds</p>
                     </div>
                 </div>
             </div>
