@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
-const Cart = () => {
+const Cart = (props) => {
+    const activityTime = props.activityTime;
     const [breaks, setBreak] = useState(0);
+
+    // console.log(activityTime);
 
     function breakTimeHandler(value){
         setBreak(value);
@@ -52,10 +55,10 @@ const Cart = () => {
                     <h5>Sports Details</h5>
 
                     <div className="exercise-time">
-                        <p>Exercise time: seconds</p>
+                        <p>Activity time: {activityTime} mins</p>
                     </div>
                     <div className="break-time">
-                        <p>Break time: {breaks} seconds</p>
+                        <p>Break time: {breaks} mins</p>
                     </div>
                 </div>
             </div>

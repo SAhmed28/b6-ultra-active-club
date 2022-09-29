@@ -7,11 +7,22 @@ import Cart from '../Cart/Cart';
 
 const Sports = () => {
     const [activities, setActivity] = useState([]);
+    const [activityTime, setActivityTime] = useState(0);
+
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
         .then(data => setActivity(data))
     },[])
+
+    function handleAddToList(receivedTime){
+        const newTime = parseInt(activityTime)+ parseInt(receivedTime);
+        setActivityTime(newTime);
+        // console.log(activityTime)
+    }
+
+    
+
     return (
         <div className='container-fluid'>
             <div className="row">
@@ -25,6 +36,7 @@ const Sports = () => {
                         {
                             activities.map(activity => <Sport 
                                 activity={activity}
+                                handleAddToList = {handleAddToList}
                                 key = {activity.id}
                                 ></Sport>)
                         }
@@ -32,7 +44,7 @@ const Sports = () => {
                 </div>
                 
                 <div className="col-lg-3 right">
-                    <Cart></Cart>
+                    <Cart activityTime = {activityTime}></Cart>
                 </div>
             </div>
         </div>

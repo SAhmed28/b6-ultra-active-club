@@ -3,6 +3,7 @@ import './Sport.css'
 
 const Sport = (props) => {
     const {title, image, desc, time} = props.activity;
+    
     return (
         <div className="col-lg-4">
             <div className='card mb-3'>
@@ -12,7 +13,7 @@ const Sport = (props) => {
                     <p class="card-text">{desc}</p>
                     <p class="card-text">For Age: 20-25</p>
                     <p class="card-text time">Time Required: {time}min</p>
-                    <button className="btn btn-primary">Add to list</button>
+                    <button onClick={() => props.handleAddToList(time)} className="btn btn-primary">Add to list</button>
                 </div>
             </div>
         </div>
