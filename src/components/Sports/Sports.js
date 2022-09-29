@@ -32,7 +32,7 @@ const Sports = () => {
                 </div>
                 
                 <div className="col-lg-3 right">
-                    {/* <Cart></Cart> */}
+                    <Cart></Cart>
                 </div>
             </div>
         </div>
