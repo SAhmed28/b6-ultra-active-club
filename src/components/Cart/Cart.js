@@ -40,11 +40,11 @@ const Cart = (props) => {
                     <h5>Add A Break</h5>
                     <div className="breaks">
                         <ul className='d-flex justify-content-center'>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(10)}>10</button>s</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(20)}>20</button>s</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(30)}>30</button>s</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(40)}>40</button>s</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(50)}>50</button>s</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(10)}>10</button>mins</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(20)}>20</button>mins</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(30)}>30</button>mins</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(40)}>40</button>mins</li>
+                            <li className='px-2'><button onClick={()=>breakTimeHandler(50)}>50</button>mins</li>
                         </ul>
                     </div>
                 </div>
