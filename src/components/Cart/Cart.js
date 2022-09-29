@@ -35,7 +35,7 @@ const Cart = (props) => {
             </div>
 
             {/* break part*/}
-            <div className="row pb-4 breaks">
+            <div className="row breaks">
                 <div className="col-lg-12">
                     <h5>Add A Break</h5>
                     <div>
@@ -50,15 +50,15 @@ const Cart = (props) => {
                 </div>
             </div>
 
-            <div className="row">
+            <div className="row details">
                 <div className="col-lg-12">
                     <h5>Sports Details</h5>
 
                     <div className="exercise-time">
-                        <p>Activity time: {activityTime} mins</p>
+                        <p>Activity time: <span>{activityTime}</span> mins</p>
                     </div>
                     <div className="break-time">
-                        <p>Break time: {breaks} mins</p>
+                        <p>Break time: <span>{breaks}</span> mins</p>
                     </div>
                 </div>
             </div>
