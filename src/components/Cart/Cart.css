@@ -4,6 +4,10 @@ ol, ul {
 a, a:hover {
     text-decoration: none;
 }
+.cart{
+    position: sticky;
+    top: 0;
+}
 .person-img, .person-info{
     text-align: center;
 }
@@ -20,4 +24,24 @@ a, a:hover {
 .person-info p{
     color: #00c6ac;
     font-weight: bold;
+}
+
+.breaks{
+    padding: 0 1rem;
+}
+.breaks h5{
+    font-weight: bold;
+}
+.breaks ul{
+    padding-left: 0;
+    background: #ebfbff;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+}
+.breaks li button{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid #00c6ac;
+    background: #fff;
 }

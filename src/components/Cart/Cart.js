@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationPin } from '@fortawesome/free-solid-svg-icons'
 import './Cart.css'
+
 const Cart = (props) => {
     const activityTime = props.activityTime;
     const [breaks, setBreak] = useState(0);
@@ -12,9 +13,8 @@ const Cart = (props) => {
         setBreak(value);
     }
     
-
     return (
-        <div>
+        <div className='cart'>
             <div className="row">
                 <div className="col-lg-12 col-sm-12">
                     <div className="person-img">
@@ -35,16 +35,16 @@ const Cart = (props) => {
             </div>
 
             {/* break part*/}
-            <div className="row pb-4">
+            <div className="row pb-4 breaks">
                 <div className="col-lg-12">
                     <h5>Add A Break</h5>
-                    <div className="breaks">
-                        <ul className='d-flex justify-content-center'>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(10)}>10</button>mins</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(20)}>20</button>mins</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(30)}>30</button>mins</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(40)}>40</button>mins</li>
-                            <li className='px-2'><button onClick={()=>breakTimeHandler(50)}>50</button>mins</li>
+                    <div>
+                        <ul className='d-flex'>
+                            <li><button onClick={()=>breakTimeHandler(10)}>10</button>mins</li>
+                            <li><button onClick={()=>breakTimeHandler(20)}>20</button>mins</li>
+                            <li><button onClick={()=>breakTimeHandler(30)}>30</button>mins</li>
+                            <li><button onClick={()=>breakTimeHandler(40)}>40</button>mins</li>
+                            <li><button onClick={()=>breakTimeHandler(50)}>50</button>mins</li>
                         </ul>
                     </div>
                 </div>
